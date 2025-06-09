@@ -104,7 +104,7 @@ st.title("💻 Laptop Price Predictor")
 # Load and preprocess data
 @st.cache_data
 def load_data():
-    df = pd.read_csv("C:/Users/VedPathak/Desktop/New folder/laptop_data.csv")
+    df = pd.read_csv("laptop_data.csv")
 
     # 🛠️ Fix: Drop index column if it exists
     if 'Unnamed: 0' in df.columns:
